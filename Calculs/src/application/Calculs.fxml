@@ -6,15 +6,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="303.0" prefWidth="463.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.CalculsController">
+<AnchorPane prefHeight="303.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculsController">
    <children>
-      <Button fx:id="add" layoutX="93.0" layoutY="185.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Addition" />
-      <Button fx:id="sous" layoutX="256.0" layoutY="185.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" text="Soustraction" />
-      <TextField fx:id="txt2" layoutX="57.0" layoutY="113.0" prefHeight="27.0" prefWidth="132.0" promptText="Deuxième nombre" />
-      <TextField fx:id="txt1" layoutX="57.0" layoutY="58.0" prefHeight="27.0" prefWidth="132.0" promptText="Première nombre" />
-      <Button fx:id="mult" layoutX="93.0" layoutY="232.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Multiplcation" />
-      <Button fx:id="divi" layoutX="256.0" layoutY="232.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="123.0" text="Division" />
+      <Button fx:id="add" layoutX="93.0" layoutY="185.0" mnemonicParsing="false" onAction="#calculs" prefHeight="27.0" prefWidth="116.0" text="Addition" />
+      <Button fx:id="sous" layoutX="256.0" layoutY="185.0" mnemonicParsing="false" onAction="#calculs" prefHeight="27.0" prefWidth="123.0" text="Soustraction" />
+      <TextField fx:id="txt2" layoutX="57.0" layoutY="113.0" onKeyReleased="#verifText" prefHeight="27.0" prefWidth="132.0" promptText="Deuxième nombre" />
+      <TextField fx:id="txt1" layoutX="57.0" layoutY="58.0" onKeyReleased="#verifText" prefHeight="27.0" prefWidth="132.0" promptText="Première nombre" />
+      <Button fx:id="mult" layoutX="93.0" layoutY="232.0" mnemonicParsing="false" onAction="#calculs" prefHeight="27.0" prefWidth="116.0" text="Multiplcation" />
+      <Button fx:id="divi" layoutX="256.0" layoutY="232.0" mnemonicParsing="false" onAction="#calculs" prefHeight="27.0" prefWidth="123.0" text="Division" />
       <Label fx:id="res" alignment="CENTER" layoutX="251.0" layoutY="85.0" prefHeight="17.0" prefWidth="132.0" text="Résultat" textAlignment="CENTER">
          <font>
             <Font size="23.0" />

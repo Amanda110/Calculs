@@ -40,7 +40,7 @@ public class CalculsController {
     {
     	try 
     	{	
-			Integer.parseInt(a.getText());
+			Double.parseDouble(a.getText());
 		} 
     	catch (NumberFormatException e) 
     	{
